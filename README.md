@@ -42,4 +42,5 @@ Socket library official docs [here](https://docs.python.org/3/library/socket.htm
   http://127.0.0.1:2500/somemessage
   ```
 - In you terminal you can see this request and on page in browser you`ll see this message:
-![response_img](img_1.png)
+![Response1 (2)](https://github.com/AlexanderSeryakov/echo-web-server/assets/110708669/4cc8fa71-d67f-4a4c-bb54-73759d6d50f8)
+
