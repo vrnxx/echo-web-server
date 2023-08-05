@@ -1,5 +1,9 @@
 # Simple echo web-server
-Simple web-server on Python with socket default library.
+An EchoServer is an application that allows a client and a server to connect so 
+a client can send a message to the server and the server can receive the message and send,
+or echo, it back to the client.
+
+Simple echo web-server on Python with socket default library.
 
 Socket library official docs [here](https://docs.python.org/3/library/socket.html).
 
@@ -39,8 +43,9 @@ Socket library official docs [here](https://docs.python.org/3/library/socket.htm
 
 - Move to you browser and send some request to: 
   ```
-  http://127.0.0.1:2500/somemessage
+  http://127.0.0.1:2500/hello-world
   ```
 - In you terminal you can see this request and on page in browser you`ll see this message:
-![Response1 (2)](https://github.com/AlexanderSeryakov/echo-web-server/assets/110708669/4cc8fa71-d67f-4a4c-bb54-73759d6d50f8)
+![image](https://github.com/AlexanderSeryakov/echo-web-server/assets/110708669/e577dbae-645b-46da-8f9b-10d2c22e2f34)
+
 
