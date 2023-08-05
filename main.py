@@ -8,8 +8,9 @@ server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 # like a Steam client, Discord ect
 server.bind(('127.0.0.1', 2500))
 
-# Set max incoming requests, if requests count will be greater 10 this requests will be dropped
-server.listen(10)
+# Set max incoming requests, if requests count will be greater 2 this requests will be dropped
+# but this server can accept only 1 connect and will be close after this.
+server.listen(2)
 
 # Check that the server is successful running
 print('The server is running and waiting for a request')
@@ -28,7 +29,7 @@ print(f'Request accepted, data: {data}')
 HEADERS = 'HTTP/1.1 200 OK\r\nContent-Type: text/html; charset=utf-8\r\n\r\n'
 
 # Create a response to our client and encode it to utf-8
-response_to_client = 'Request accepted. This message is a server response...'.encode('utf-8')
+response_to_client = data.split()[1][1:].encode('utf-8')
 
 # Send a response to client
 client_socket.send(HEADERS.encode('utf-8') + response_to_client)
